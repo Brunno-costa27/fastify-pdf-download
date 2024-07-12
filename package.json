@@ -1,0 +1,26 @@
+{
+  "name": "fastify-pdf-download",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "fastify": "^4.28.1",
+    "fastify-compress": "^4.1.0",
+    "fastify-formbody": "^5.3.0",
+    "fastify-static": "^4.7.0",
+    "multer": "^1.4.5-lts.1",
+    "serve-static": "^1.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "vercel": "^34.3.1"
+  }
+}
