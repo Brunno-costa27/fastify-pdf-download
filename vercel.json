@@ -2,13 +2,28 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.js",
+        "src": "index.js",
         "use": "@vercel/node"
       }
     ],
     
-    "rewrites":  [
-    {"source": "/(.*)", "destination": "/preview"}
+    "routes":  [
+    {
+     "src": "/(.*)",
+     "dest": "/"
+    },
+    {
+      "src": "/preview",
+      "dest": "/preview"
+    },
+    {
+      "src": "/download",
+      "dest": "/download"
+    },
+    {
+      "src": "/upload",
+      "dest": "/upload"
+    }
   ]
   }
   
