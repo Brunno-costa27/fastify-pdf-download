@@ -18,10 +18,14 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
+app.get('/', (req, res) => {
+  res.send(`<p style="color: red;">Deu certo!</p>`);
+});
+
 // Rota para visualizar o PDF
 app.get('/preview', (req, res) => {
   // Caminho para o arquivo PDF
-  const filePath = path.join(__dirname, 'uploads', '1720743013952-curriculo_atualizado.pdf');
+  const filePath = path.join(__dirname, '../uploads', '1720743013952-curriculo_atualizado.pdf');
 
   // fs.readdir(uploadDir, (err, files) => {
   //   if (err) {
@@ -53,7 +57,7 @@ app.get('/preview', (req, res) => {
 // Rota para baixar o PDF
 app.get('/download', (req, res) => {
   // Caminho para o arquivo PDF
-  const filePath = path.join(__dirname, 'uploads', '1720743013952-curriculo_atualizado.pdf');
+  const filePath = path.join(__dirname, '../uploads', '1720743013952-curriculo_atualizado.pdf');
 
   // fs.readdir(uploadDir, (err, files) => {
   //   if (err) {
