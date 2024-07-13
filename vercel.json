@@ -13,8 +13,16 @@
      "dest": "/src/index.js"
     },
     {
-      "src": "/uploads/(.*)",
-      "dest": "/uploads/$1"
+      "src": "/preview",
+      "dest": "/src/index.js"
+    },
+    {
+      "src": "/download",
+      "dest": "/src/index.js"
+    },
+    {
+      "src": "/upload",
+      "dest": "/src/index.js"
     }
     
   ]
