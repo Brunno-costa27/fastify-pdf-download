@@ -2,9 +2,16 @@ const express = require('express');
 const path = require('path');
 const multer = require('multer');
 const fs = require('fs');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors({
+  origin: 'http://localhost:5173', // Substitua com a URL onde sua aplicação React está hospedada
+  methods: ['GET'], // Métodos permitidos (GET, POST, etc.)
+  allowedHeaders: ['Content-Type'], // Headers permitidos na requisição
+}));
 
 // Configuração do multer para armazenamento dos arquivos
 const storage = multer.diskStorage({
