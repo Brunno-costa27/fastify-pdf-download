@@ -97,7 +97,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 });
 
 // Cria o diretório de uploads se não existir
-const uploadDir = path.join(__dirname, 'uploads');
+const uploadDir = path.join(__dirname, '../uploads');
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir);
 }
