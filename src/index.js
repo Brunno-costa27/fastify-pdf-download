@@ -8,7 +8,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://lange-page-portfolio.netlify.app'], // Substitua com a URL onde sua aplicação React está hospedada
+  origin: ['http://localhost:5173', 'https://project-portfolio-personal.netlify.app'], // Substitua com a URL onde sua aplicação React está hospedada
   methods: ['GET'], // Métodos permitidos (GET, POST, etc.)
   allowedHeaders: ['Content-Type'], // Headers permitidos na requisição
 }));
