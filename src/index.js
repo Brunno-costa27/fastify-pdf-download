@@ -64,7 +64,7 @@ app.get('/preview', (req, res) => {
 // Rota para baixar o PDF
 app.get('/download', (req, res) => {
   // Caminho para o arquivo PDF
-  const filePath = path.join(__dirname, '../uploads', '1720743013952-curriculo_atualizado.pdf');
+  const filePath = path.join(__dirname, '../uploads', 'curriculo-novo.pdf');
 
   // fs.readdir(uploadDir, (err, files) => {
   //   if (err) {
