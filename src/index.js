@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 // Rota para visualizar o PDF
 app.get('/preview', (req, res) => {
   // Caminho para o arquivo PDF
-  const filePath = path.join(__dirname, '../uploads', '1720743013952-curriculo_atualizado.pdf');
+  const filePath = path.join(__dirname, '../uploads', 'curriculo-novo.pdf');
 
   // fs.readdir(uploadDir, (err, files) => {
   //   if (err) {
